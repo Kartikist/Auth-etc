@@ -1,11 +1,17 @@
-{% extends "index.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hellp</h1>
+    <button> home page </button> 
+    <a href="{{url_for('home')}}"><button> home page</button></a>
 
-
-{% block content %}
-
-<br>
-    <h1> This is base,html page </h1>
-    <button href="{{url_for('homeoe')}}"> home page </button> 
-    <!-- add bootstrap for class to run href option above -->
-
-{% endblock %}
+    {% block meow %}
+        
+    {% endblock meow %}
+</body>
+</html>
